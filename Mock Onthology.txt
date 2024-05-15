@@ -1,0 +1,27 @@
+Onthology
+I. Generic entity components
+	I.1. Components: Fundamental building blocks of systems, such as services, modules, libraries, and frameworks.
+	I.2. Interfaces: Defined ways in which components interact with each other, including APIs, protocols, and contracts.
+	I.3. Resources: Assets utilized or managed by components, like databases, file systems, and external services.
+	I.4. Operations: Actions or processes that components perform or support, including CRUD operations, authentication, and logging.
+II. Entity Types within Categories
+II.i. Components
+	II.i.1. Service: A self-contained unit of software that performs a specific function.
+	II.i.2. Module: A part of a program that contains one or more routines.
+	II.i.3. Library: A collection of non-volatile resources used by computer programs.
+	II.i.4. Framework: An abstraction in which software providing generic functionality can be selectively changed by additional user-written code.
+II.ii Interfaces
+	II.ii.1. API (Application Programming Interface): A set of rules and definitions for building and integrating application software.
+	II.ii.2. Protocol: A system of rules that allow two or more entities of a communications system to transmit information.
+II.iii. Resources
+	II.iii.1. Database: A systematic collection of data that supports electronic storage and manipulation.
+	II.iii.2. File System: A method and data structure that an operating system uses to control how data is stored and retrieved.
+II.iv. Operations
+	II.iv.1. Authentication: The process of verifying the identity of a user or process.
+	I.iv.2. Data Manipulation: Operations such as create, read, update, and delete (CRUD) performed on data.
+
+III. Entity Relationships
+	III.1. USES: Indicates that one entity utilizes another (e.g., a Service uses a Database).
+	III.2. INTERFACES_WITH: Shows that two components communicate through a defined interface (e.g., a Service interfaces with another Service through an API).
+	III.3. DEPENDS_ON: Signifies that the functionality of one entity relies on another (e.g., a Service depends on a Library).
+	III.4. PERFORMS: Associates components or interfaces with the operations they carry out (e.g., a Service performs Authentication).

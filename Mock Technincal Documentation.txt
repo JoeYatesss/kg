@@ -1,0 +1,19 @@
+
+Note: 
+ This set of documents created specifically for initial experimentation around LLM-driven entity and relationship extraction.
+ Documents written to include a mix of well-defined reference (code and purpose), less defined (code only or purpose only) and a mix of one-way and mutual (two-way) references across documents, as well as one implicit reference (e.g. "use our default service") so that we can evalute how well the prompt manages to identify those relationships and plan the next steps. 
+
+MOCK TECHINICAL DOCUMENTATION
+
+1. User Authentication Service UAS_CUST Documentation
+“The UAS_CUST1 provides secure user login and authentication functionality for end customers . It uses modern encryption standards to ensure data security. It uses SSO with Azure to authenticate user credentials and manage session tokens. It is our main customer authentication API  used by all our D2C web portals, unless specified otherwise in the portal or web app documentation.” 
+2. Profile Management Service Documentation
+“The PMS_CUST1 is the Customer Profile Management Service for handling user profiles, including personal information, preferences, and settings. It relies on the UAS_CUST1 for authenticating users and on the Data Storage service DSS1  for storing and retrieving user-related data with CRUD operations.”
+ 3. Data Storage Service Documentation
+“DSS1 is responsible for the persistent storage of application data, including but not limited to user profiles and system settings. It supports CRUD operations and offers robust data replication and backup mechanisms.”
+ 4. Authentication API Documentation
+“The CUST_AUTH1 is our customer authentication  API  that facilitates communication access to the User Authentication Services such as UAS_CUST1. It defines protocols for user authentication, session management, and token validation to ensure secure access to user profiles. ”
+5. Data API Documentation
+“DAPI1  is the API that provides a standardized way for services to perform data operations on the Data Storage Services such as DSS1. It supports a wide range of data manipulation operations including queries, updates, and deletions, enabling the consuming services Service to manage data efficiently.”
+6. Direct to consumer Web Portal documentation
+“CUST_PORT1 is the KETO4EVER’s brand e-commerce Portal. It provides customers with product information and ability to order KETO4EVER products for home delivery as well as the account management capabilities.  It relies on PMS_CUSR1 for customer profile management. For customer authentication it uses our main customer authentication Service.”
